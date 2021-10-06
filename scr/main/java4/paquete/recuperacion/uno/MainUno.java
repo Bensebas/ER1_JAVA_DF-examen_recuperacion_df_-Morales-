@@ -65,7 +65,7 @@ public class MainUno {
 										nombreA = Lector.next();
 										System.out.println("Ingrese el apellido");
 										apellidoA = Lector.next();
-										System.out.println("Ingrese la edad");
+										System.out.println("Ingrese la codigo de beca");
 										codigoDeBecaA = LectorN.nextLine();
 										System.out.println("Ingrese el codigo de seguro");
 										codigoColegioT = Lector.next();
@@ -90,11 +90,11 @@ public class MainUno {
 										nombreB = Lector.next();
 										System.out.println("Ingrese el apellido");
 										apellidoB = Lector.next();
-										System.out.println("Ingrese la edad");
+										System.out.println("Ingrese codigo de beca");
 										codigoDeBecaB = LectorN.nextLine();
-										System.out.println("Ingrese el codigo de seguro");
+										System.out.println("Ingrese el codigo de conadis");
 										codigoConadisT = Lector.next();
-										System.out.println("Ingrese codigo de beneficio");
+										System.out.println("Ingrese discapacidad");
 										discapacidadT = Lector.nextLine();
 
 										becadoB.setNombre(nombreB);
@@ -112,23 +112,23 @@ public class MainUno {
 								} else if (car.equals("c")) {
 									do {
 										System.out.println("Ingrese el nombre");
-										nombreA = Lector.next();
+										nombreC = Lector.next();
 										System.out.println("Ingrese el apellido");
-										apellidoA = Lector.next();
-										System.out.println("Ingrese la edad");
-										codigoDeBecaA = LectorN.nextLine();
-										System.out.println("Ingrese el codigo de seguro");
-										codigoColegioT = Lector.next();
-										System.out.println("Ingrese codigo de beneficio");
-										cumpleañosT = LectorN.nextInt();
+										apellidoC = Lector.next();
+										System.out.println("Ingrese la codigo de beca");
+										codigoDeBecaC = LectorN.nextLine();
+										System.out.println("Ingrese el codigo beneficio");
+										codigoBeneficioT = Lector.next();
+										System.out.println("Ingrese salario de los padres ");
+										salarioDeLosPadresT = LectorN.nextInt();
 
-										becadoN.setNombre(nombreA);
-										becadoN.setApellido(apellidoA);
-										becadoN.setCodigoDeBeca(codigoDeBecaA);
-										becadoN.setCodigoColegio(codigoColegioT);
-										becadoN.setFechaDeCumpleaños(cumpleañosT);
+										becadoR.setNombre(nombreC);
+										becadoR.setApellido(apellidoC);
+										becadoR.setCodigoDeBeca(codigoDeBecaC);
+										becadoR.setCodigoBeneficio(codigoBeneficioT);
+										becadoR.setSalarioDePadres(salarioDeLosPadresT);
 
-										bec[indice] = becadoN;
+										bec[indice] = becadoR;
 										indice++;
 										System.out.println("¿Deseas ingresar otro Paciente 3era edad? (yes/no): ");
 										var = LectorN.next();
@@ -143,9 +143,15 @@ public class MainUno {
 								System.out.println("a)Becado por Notas");
 								System.out.println("b)Becado por Discapacidad");
 								System.out.println("c)Becado por Recursos");
+								
+								if (car.equals("a")) {
+									
+								}else if(car.equals("b")) {
+									
+								}else if(car.equals("c")) {
 
 								;
-								break;
+								break;}
 
 							case 3:
 
